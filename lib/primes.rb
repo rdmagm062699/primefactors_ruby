@@ -2,16 +2,15 @@ class Primes
    def factors(number)
    	   prime_factors = []
 
-   	   if number > 1
-   	   	   while number % 2 == 0
-   	   	      prime_factors << 2
-   	   	      number /= 2
+   	   while number > 1
+   	   	   (2..number).to_a.each do |i|
+   	   	   	   if number % i == 0
+   	   	   	   	   prime_factors << i
+   	   	   	   	   number /= i
+   	   	   	   	   break
+   	   	   	   end
    	   	   end
-   	   	   
-   	   	   if number > 1
-   	   	      prime_factors << number  
-   	   	   end 	   	   
-   	   end
+   	   	end
 
       return prime_factors
    end

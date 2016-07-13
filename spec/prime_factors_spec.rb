@@ -28,4 +28,8 @@ describe Primes do
    it 'will return [2,2,2] for 8' do
    	   expect(Primes.new.factors(8)).to eq [2,2,2]
    end
+
+   it 'will return [3, 3] for 9' do
+   	   expect(Primes.new.factors(9)).to eq [3,3]
+   end
 end
