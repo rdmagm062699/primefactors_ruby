@@ -3,7 +3,11 @@ class Primes
    	   prime_factors = []
 
    	   if number > 1
-   	   	   prime_factors << 2
+   	   	   if number % 2 == 0
+   	   	      prime_factors << 2
+   	   	   else
+   	   	   	   prime_factors << number
+   	   	   end
    	   end
 
       return prime_factors

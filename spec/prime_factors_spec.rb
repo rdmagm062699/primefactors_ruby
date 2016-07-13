@@ -12,4 +12,8 @@ describe Primes do
    it 'will return [2] for 2' do
    	   expect(Primes.new.factors(2)).to eq [2]
    end
+
+   it 'will return [3] for 3' do
+   	   expect(Primes.new.factors(3)).to eq [3]
+   end
 end
