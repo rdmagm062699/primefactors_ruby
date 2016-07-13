@@ -20,4 +20,12 @@ describe Primes do
    it 'will return [2,2] for 4' do
    	   expect(Primes.new.factors(4)).to eq [2,2]
    end
+
+   it 'will return [2,3] for 6' do
+   	   expect(Primes.new.factors(6)).to eq [2,3]
+   end
+
+   it 'will return [2,2,2] for 8' do
+   	   expect(Primes.new.factors(8)).to eq [2,2,2]
+   end
 end
