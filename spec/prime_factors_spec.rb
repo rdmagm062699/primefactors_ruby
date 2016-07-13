@@ -32,4 +32,8 @@ describe Primes do
    it 'will return [3, 3] for 9' do
    	   expect(Primes.new.factors(9)).to eq [3,3]
    end
+
+   it 'will return [2, 2, 2, 3, 3, 11] for 792' do
+   	   expect(Primes.new.factors(792)).to eq [2, 2, 2, 3, 3, 11]
+   end
 end
